@@ -9,6 +9,7 @@ import java.util.List;
 public class Funcionarios {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     public int funcionario_id;
     public String nome;
     public String cargo;
