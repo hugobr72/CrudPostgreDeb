@@ -1,15 +1,12 @@
 package com.example.crudpostgredeb.controllers;
 
-import com.example.crudpostgredeb.models.MotorisaRepository;
+import com.example.crudpostgredeb.models.repository.MotorisaRepository;
 import com.example.crudpostgredeb.models.Motorista;
-import org.apache.el.stream.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.client.HttpClientErrorException;
-import org.springframework.web.client.HttpServerErrorException;
 
 import java.util.List;
 
