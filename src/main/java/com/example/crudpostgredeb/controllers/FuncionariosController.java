@@ -18,10 +18,8 @@ public class FuncionariosController {
     @GetMapping("/")
     public ResponseEntity<?>  GetAllFuncionarios(){
         var result = service.GetAll();
-        if(result.contains("sucesso")){
-            return ResponseEntity.ok().body(result);
-        }
-        return ResponseEntity.badRequest().body(result);
+        return ResponseEntity.ok().body(result);
+
     }
 
     @PostMapping("/create")
